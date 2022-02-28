@@ -1,0 +1,26 @@
+/*
+ * @Author: Monve
+ * @Date: 2022-02-28 15:41:10
+ * @LastEditors: Monve
+ * @LastEditTime: 2022-02-28 16:00:07
+ * @FilePath: /base-class-fuction-extend/src/array.ts
+ */
+
+declare interface Array<T> {
+  remove(...item: T[]): void
+  deduplicatePush(...item: T[]): void
+}
+
+Array.prototype.remove = function <T>(...item: T[]): void {
+  item.forEach((obj: T) => {
+    const idx = this.indexOf(obj)
+    if (idx != -1) {
+      this.slice(idx, idx + 1)
+    }
+  })
+}
+
+Array.prototype.deduplicatePush = function <T>(...item: T[]): void {
+  this.remove(item)
+  this.push(item)
+}
