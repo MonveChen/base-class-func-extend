@@ -1,7 +1,7 @@
 {
   "name": "base-class-fuction-extend",
-  "version": "1.0.1",
-  "description": "for compare version",
+  "version": "1.0.2",
+  "description": "base class commonly used function extension",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
