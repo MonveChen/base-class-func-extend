@@ -1,10 +1,11 @@
 # base-class-fuction-extend
+
 A base class commonly used function extension plugin
 
 #### Usage
 
 ```js
-import "base-class-fuction-extend"
+import "base-class-fuction-extend" //import it first
 
 const a = ['a']
 a.remove('a')
@@ -15,4 +16,3 @@ a.deduplicatePush('a')
 require("base-class-fuction-extend")
 
 ```
-
