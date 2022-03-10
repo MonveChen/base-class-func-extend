@@ -2,12 +2,12 @@
  * @Author: Monve
  * @Date: 2022-03-10 14:42:14
  * @LastEditors: Monve
- * @LastEditTime: 2022-03-10 14:44:08
+ * @LastEditTime: 2022-03-10 14:57:06
  * @FilePath: /base-class-fuction-extend/src/object.ts
  */
 
 declare interface ObjectConstructor {
-  reverseKeyValue(o: Object): Object
+  reverseKeyValue(o: Object): any
 }
 
 /**
@@ -15,7 +15,7 @@ declare interface ObjectConstructor {
  * like {a:b}->{b:a},other can not be ensure availability.
  * Use with caution
  */
-Object.reverseKeyValue = function (o: Object): Object {
+Object.reverseKeyValue = function (o: Object): any {
   let temp: { [key: string | number]: string | number } = {}
   Object.keys(o).map((key) => {
     temp[(o as any)[key]] = key
