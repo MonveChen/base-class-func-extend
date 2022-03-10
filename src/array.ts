@@ -2,7 +2,7 @@
  * @Author: Monve
  * @Date: 2022-02-28 15:41:10
  * @LastEditors: Monve
- * @LastEditTime: 2022-03-04 14:37:31
+ * @LastEditTime: 2022-03-10 16:57:51
  * @FilePath: /base-class-fuction-extend/src/array.ts
  */
 
@@ -27,5 +27,5 @@ Array.prototype.deduplicatePush = function <T>(...item: T[]): void {
 }
 
 Array.prototype.includeArr = function <T>(arr: T[]): boolean {
-  return this.every(val => arr.includes(val))
+  return arr.every(val => this.includes(val))
 }
