@@ -2,7 +2,7 @@
  * @Author: Monve
  * @Date: 2022-02-28 15:41:10
  * @LastEditors: Monve
- * @LastEditTime: 2022-03-10 16:57:51
+ * @LastEditTime: 2022-03-23 10:18:33
  * @FilePath: /base-class-fuction-extend/src/array.ts
  */
 
@@ -16,7 +16,7 @@ Array.prototype.remove = function <T>(...item: T[]): void {
   item.forEach((obj: T) => {
     const idx = this.indexOf(obj)
     if (idx != -1) {
-      this.slice(idx, idx + 1)
+      this.splice(idx, idx + 1)
     }
   })
 }
