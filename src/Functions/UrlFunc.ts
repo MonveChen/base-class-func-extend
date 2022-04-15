@@ -2,16 +2,16 @@
  * @Author: Monve
  * @Date: 2022-04-14 19:06:34
  * @LastEditors: Monve
- * @LastEditTime: 2022-04-15 11:20:02
+ * @LastEditTime: 2022-04-15 14:16:18
  * @FilePath: /base-class-fuction-extend/src/Functions/urlFunc.ts
  */
-class UrlFunc {
+export const UrlFunc = {
   /**
    * @param url e.g. https://****?ie=utf-8&f=8&rsv_bp=1 or ***?ie=utf-8&f=8&rsv_bp=1
    * @param options default { parseNumbers: false, parseBooleans: false }
    * @returns e.g. {ie:'utf-8',rsv_bp:'1'} if parseNumbers is true, will be {ie:'utf-8',rsv_bp:1}
    */
-  static getParams(url: string, options = { parseNumbers: false, parseBooleans: false }) {
+  getParams(url: string, options = { parseNumbers: false, parseBooleans: false }) {
     let dic: { [key: string]: string | number | boolean } = {}
     const params_strs = url.replace(/^.*\?/g, '').split('&')
     params_strs.forEach((str) => {
