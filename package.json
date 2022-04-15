@@ -1,6 +1,6 @@
 {
-  "name": "base-class-fuction-extend",
-  "version": "1.0.13",
+  "name": "base-class-func-extend",
+  "version": "1.0.14",
   "description": "base class commonly used function extension",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MonveChen/base-class-fuction-extend.git"
+    "url": "git+https://github.com/MonveChen/base-class-func-extend.git"
   },
   "keywords": [
     "prototype",
@@ -33,9 +33,9 @@
   "author": "Monve",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/MonveChen/base-class-fuction-extend/issues"
+    "url": "https://github.com/MonveChen/base-class-func-extend/issues"
   },
-  "homepage": "https://github.com/MonveChen/base-class-fuction-extend#readme",
+  "homepage": "https://github.com/MonveChen/base-class-func-extend#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^16.11.25",

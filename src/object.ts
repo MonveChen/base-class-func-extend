@@ -3,7 +3,7 @@
  * @Date: 2022-03-10 14:42:14
  * @LastEditors: Monve
  * @LastEditTime: 2022-03-10 15:28:15
- * @FilePath: /base-class-fuction-extend/src/object.ts
+ * @FilePath: /base-class-func-extend/src/object.ts
  */
 
 declare interface ObjectConstructor {

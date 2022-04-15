@@ -2,8 +2,8 @@
  * @Author: Monve
  * @Date: 2022-04-14 19:06:34
  * @LastEditors: Monve
- * @LastEditTime: 2022-04-15 14:16:18
- * @FilePath: /base-class-fuction-extend/src/Functions/urlFunc.ts
+ * @LastEditTime: 2022-04-15 14:30:14
+ * @FilePath: /base-class-func-extend/src/Functions/UrlFunc.ts
  */
 export const UrlFunc = {
   /**
