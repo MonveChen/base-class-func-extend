@@ -1,5 +1,7 @@
 # base-class-fuction-extend
 
+move to base-class-func-extend because name. emo..
+
 A base class commonly used function extension plugin
 
 #### Usage
