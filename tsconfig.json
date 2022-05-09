@@ -24,7 +24,8 @@
     "inlineSourceMap": true,
     "importHelpers": true,
     "allowSyntheticDefaultImports": true,
-    "declaration": true
+    "declaration": true,
+    "strictNullChecks": true
   },
   "exclude": [
     "test",
