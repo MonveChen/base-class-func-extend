@@ -2,15 +2,15 @@
  * @Author: Monve
  * @Date: 2022-02-28 15:41:10
  * @LastEditors: Monve
- * @LastEditTime: 2022-05-09 15:30:46
- * @FilePath: /lzb-chat-web/node_modules/base-class-func-extend/src/array.ts
+ * @LastEditTime: 2022-05-09 15:46:23
+ * @FilePath: /base-class-func-extend/src/array.ts
  */
 
 declare interface Array<T> {
   remove(...item: T[]): void
   deduplicatePush(...item: T[]): void
   deduplicateConcat(...items: T[][]): T[]
-  includeArr(arr: T[]): boolean
+  includeArr(...items: T[][]): boolean
 }
 
 Array.prototype.remove = function <T>(...item: T[]): void {
@@ -34,6 +34,8 @@ Array.prototype.deduplicateConcat = function <T>(...items: T[][]): T[] {
   return this
 }
 
-Array.prototype.includeArr = function <T>(arr: T[]): boolean {
-  return arr.every(val => this.includes(val))
+Array.prototype.includeArr = function <T>(...items: T[][]): boolean {
+  return items.every(item =>
+    item.every(val => this.includes(val))
+  )
 }
