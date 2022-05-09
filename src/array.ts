@@ -2,8 +2,8 @@
  * @Author: Monve
  * @Date: 2022-02-28 15:41:10
  * @LastEditors: Monve
- * @LastEditTime: 2022-05-09 13:59:10
- * @FilePath: /base-class-func-extend/src/array.ts
+ * @LastEditTime: 2022-05-09 15:30:46
+ * @FilePath: /lzb-chat-web/node_modules/base-class-func-extend/src/array.ts
  */
 
 declare interface Array<T> {
@@ -23,8 +23,8 @@ Array.prototype.remove = function <T>(...item: T[]): void {
 }
 
 Array.prototype.deduplicatePush = function <T>(...item: T[]): void {
-  this.remove(item)
-  this.push(item)
+  this.remove(...item)
+  this.push(...item)
 }
 
 Array.prototype.deduplicateConcat = function <T>(...items: T[][]): T[] {
