@@ -13,7 +13,7 @@ a.remove('a')
 
 a.remove('a','b')	//移除 a、b   []
 
-a.deduplicatePush('a')  //去重式push.  ['a','a']
+a.deduplicatePush('a')  //去重式push.  ['a']
 
 a.includeArr(['b','c'])    //是否包含数组.  false
 
