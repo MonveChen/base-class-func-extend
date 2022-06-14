@@ -2,7 +2,7 @@
  * @Author: Monve
  * @Date: 2022-02-28 15:41:10
  * @LastEditors: Monve
- * @LastEditTime: 2022-05-19 19:13:16
+ * @LastEditTime: 2022-06-14 14:29:42
  * @FilePath: /base-class-func-extend/src/array.ts
  */
 
@@ -12,6 +12,7 @@ declare interface Array<T> {
   deduplicateConcat(...items: T[][]): T[]
   includeArr(...items: T[][]): boolean
   isSameTo(...items: T[][]): boolean
+  splitArrByNum(num: number): T[][]
 }
 
 Array.prototype.remove = function <T>(...item: T[]): void {
@@ -45,4 +46,19 @@ Array.prototype.isSameTo = function <T>(...items: T[][]): boolean {
   return items.every(item =>
     this.includeArr(item) && item.includeArr(this)
   )
+}
+
+Array.prototype.splitArrByNum = function <T>(num: number): T[][] {
+  let start = 0
+  let data = []
+  for (let i = 0; i < this.length; i++) {
+    if (i % num == 0 && i != 0) {
+      data.push(this.slice(start, i))
+      start = i
+    }
+    if ((i + 1) === this.length) {
+      data.push(this.slice(start))
+    }
+  }
+  return data
 }
